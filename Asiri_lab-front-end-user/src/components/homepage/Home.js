@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div>
       {/* Banner */}
-      <section
+      {/* <section
         className="py-40"
         style={{
           backgroundImage: `url(${Banner})`,
@@ -37,7 +37,7 @@ const Home = () => {
             </button>
           </Link>
         </div>
-      </section>
+      </section> */}
 
      {/* Gym Features */}
      <section className="bg-gray-900 text-green-400 py-16">

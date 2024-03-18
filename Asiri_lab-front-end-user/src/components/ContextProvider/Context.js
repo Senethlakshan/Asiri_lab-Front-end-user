@@ -1,19 +1,21 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useState, useEffect } from 'react';
 
+export const LoginContext = createContext(null);
 
-export const LoginContext = createContext("");
+const Context = ({ children }) => {
+    const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-const Context = ({children}) => {
+    useEffect(() => {
+       
+        const token = localStorage.getItem("usersdatatoken");
+        setIsAuthenticated(!!token);
+    }, []);
 
-    const [logindata,setLoginData] = useState("");
+    return (
+        <LoginContext.Provider value={{ isAuthenticated, setIsAuthenticated }}>
+            {children}
+        </LoginContext.Provider>
+    );
+};
 
-  return (
-    <>
-    <LoginContext.Provider value={{logindata,setLoginData}}>
-        {children}
-    </LoginContext.Provider>
-    </>
-  )
-}
-
-export default Context
+export default Context;

@@ -5,7 +5,7 @@ import Profile from '../dashbord/Profile';
 import Fitness from '../dashbord/MyFitness'
 import QrCodeinfo from '../dashbord/QRCode'
 
-import { FaUser, FaDumbbell, FaQrcode, FaShoppingCart, FaUserCircle, FaThList } from 'react-icons/fa';
+import { FaUserCircle, FaThList, FaHome, FaCalendarPlus, FaFlask, FaHistory } from 'react-icons/fa';
 
 function UserPanel() {
     const [currentPage, setCurrentPage] = useState('user');
@@ -24,35 +24,35 @@ function UserPanel() {
                 </h2>
                 <ul>
                     <li
-                        className={`flex p-4 rounded-full items-center cursor-pointer text-white hover:bg-gray-700 ${currentPage === 'user' ? 'bg-purple-500 hover:bg-purple-600' : ''}`}
+                        className={`flex p-4 rounded-full items-center cursor-pointer text-white hover:bg-gray-700 ${currentPage === 'user' ? 'bg-yellow-500 hover:bg-yellow-600' : ''}`}
                         onClick={() => handlePageChange('user')}
                     >
-                        <FaUser className='mr-2' />
+                        <FaHome className='mr-2' />
                         Home
                     </li>
                     <li
-                        className={`flex p-4 rounded-full items-center cursor-pointer text-white hover:bg-gray-700 ${currentPage === 'Fitness' ? 'bg-purple-500 hover:bg-purple-600' : ''}`}
+                        className={`flex p-4 rounded-full items-center cursor-pointer text-white hover:bg-gray-700 ${currentPage === 'Fitness' ? 'bg-yellow-500 hover:bg-yellow-600' : ''}`}
                         onClick={() => handlePageChange('Fitness')}
                     >
-                        <FaDumbbell className='mr-2' />
-                        Fitness Info
+                        <FaCalendarPlus className='mr-2' />
+                        Book Appointment
                     </li>
                     <li
-                        className={`flex p-4 rounded-full items-center cursor-pointer text-white hover:bg-gray-700 ${currentPage === 'QrCodeinfo' ? 'bg-purple-500 hover:bg-purple-600' : ''}`}
+                        className={`flex p-4 rounded-full items-center cursor-pointer text-white hover:bg-gray-700 ${currentPage === 'QrCodeinfo' ? 'bg-yellow-500 hover:bg-yellow-600' : ''}`}
                         onClick={() => handlePageChange('QrCodeinfo')}
                     >
-                        <FaQrcode className='mr-2' />
-                        QR Code Info
+                        <FaFlask className='mr-2' />
+                       Lab Tests
                     </li>
                     <li
-                        className={`flex p-4 rounded-full items-center cursor-pointer text-white hover:bg-gray-700 ${currentPage === 'packages' ? 'bg-purple-500 hover:bg-purple-600' : ''}`}
+                        className={`flex p-4 rounded-full items-center cursor-pointer text-white hover:bg-gray-700 ${currentPage === 'packages' ? 'bg-yellow-500 hover:bg-yellow-600' : ''}`}
                         onClick={() => handlePageChange('packages')}
                     >
-                        <FaShoppingCart className='mr-2' />
-                        Packages
+                        <FaHistory className='mr-2' />
+                       Test History
                     </li>
                     <li
-                        className={`flex p-4 rounded-full items-center cursor-pointer text-white hover:bg-gray-700 ${currentPage === 'profile' ? 'bg-purple-500 hover:bg-purple-600' : ''}`}
+                        className={`flex p-4 rounded-full items-center cursor-pointer text-white hover:bg-gray-700 ${currentPage === 'profile' ? 'bg-yellow-500 hover:bg-yellow-600' : ''}`}
                         onClick={() => handlePageChange('profile')}
                     >
                         <FaUserCircle className='mr-2' />

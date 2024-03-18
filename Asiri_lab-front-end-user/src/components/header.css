@@ -1,86 +1,77 @@
-header{
-    width: 100%;
-    height: 80px;
-    box-shadow: 0 0 10px -7px rgba(0,0,0,0.7);
-    background-color: #111827;
-    display: flex;
-    justify-content: center;
-  }
-  
-  header nav{
-    max-width: 85%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  header nav h1{
-    color:#2d3748;
-  }
-  
-  header nav .avatar{
-    cursor: pointer;
-  }
-  
-  nav {
-    background-color: #111827;
-  }
-  
-  .nav-buttons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .nav-buttons a {
-    color: aliceblue;
-    margin: 5px;
-  }
-  
-  .nav-buttons a:hover {
-    color: white;
-  }
-  
-  .logo-container {
-    
-    margin-right:  850px;
-  }
-  
-  .logo-container h1 {
-    color: #fff;
-  }
+header {
+  width: 100%;
+  height: 80px;
+  box-shadow: 0 0 10px -7px rgba(0,0,0,0.7);
+  background-color: #111827;
+}
 
-  .logbtn{
+nav {
+  max-width: 85%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto; /* Center the nav horizontally */
+}
 
-    background-color: rgb(231, 9, 90);
-    border-radius: 5px;
-    margin: 5px;
-    padding: 6px;
-  }
+.logo-container h1 {
+  color: #fff;
+}
 
-  .regbtn{
+.menu-items {
+  flex-grow: 1; /* Allow menu items to take remaining space */
+  text-align: center; /* Center menu items */
+}
 
-    background-color: rgb(0, 202, 138);
-    border-radius: 5px;
-    margin: 5px;
-    padding: 6px;
-  }
+.menu-items a {
+  color: aliceblue;
+  margin: 5px;
+}
+
+.menu-items a:hover {
+  color: white;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  color: aliceblue;
+  margin: 5px;
+  padding: 10px;
+}
+
+.btnns a {
+  margin: 5px;
+  color: aliceblue;
+  padding: 10px;
+}
 
 
-  .logbtn:hover{
+.btnns a:hover {
+  color: rgb(14, 0, 75);
+  padding: 10px;
+  background-color: #f3db00f4;
+  border-radius: 10px;
+}
 
-    background-color: rgb(194, 7, 75);
-    border-radius: 5px;
-    margin: 5px;
-    padding: 6px;
-  }
 
-  .regbtn:hover{
+.logbtn,
+.regbtn {
+  background-color: #e7095a;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 6px;
+  text-decoration: none; /* Remove default link underline */
+}
 
-    background-color: rgb(12, 147, 104);
-    border-radius: 5px;
-    margin: 5px;
-    padding: 6px;
-  }
+.regbtn {
+  background-color: #00ca8a;
+}
 
+.logbtn:hover {
+  background-color: #c2074b;
+}
+
+.regbtn:hover {
+  background-color: #0c9368;
+}
